@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1a1a2e;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 16px;
+}
+
+.timer-card {
+  background: #16213e;
+  border-radius: 16px;
+  padding: 48px 56px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.display {
+  font-size: 8rem;
+  font-weight: 700;
+  margin-bottom: 36px;
+  min-width: 200px;
+}
+
+.presets {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.preset-btn {
+  width: 72px;
+  padding: 14px 0;
+  background: #0f3460;
+  border: 2px solid #0f3460;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.preset-btn.active {
+  border-color: #fff;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 36px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 32px 0;
+}
+
+.stopwatch .display {
+  font-size: 4rem;
+  margin-bottom: 24px;
+}
+
+#startBtn { background: #2ecc71; }
+#stopBtn  { background: #e94560; }
+#resetBtn { background: #0f3460; }
+
+#swStartBtn { background: #2ecc71; }
+#swStopBtn  { background: #e94560; }
+#swResetBtn { background: #0f3460; }
+
+@media (max-width: 480px) {
+  .timer-card {
+    padding: 32px 20px;
+  }
+
+  .display {
+    font-size: 4.5rem;
+    min-width: 0;
+  }
+
+  .stopwatch .display {
+    font-size: 2.4rem;
+  }
+
+  .preset-btn {
+    width: 56px;
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+
+  .controls {
+    gap: 10px;
+  }
+
+  button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}
